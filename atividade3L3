@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+    int i, soma;
+    scanf("%d", &i);
+    int vet[i];
+    while (i>0){
+        i--;
+        scanf("%d", &vet[i]);
+        soma += vet[i];
+    }
+    printf("%d", soma);
+    return 0;
+}
