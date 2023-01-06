@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
+#include <conio.h>
 int main()
 {
-    char str[1000],nome[1000],snome[1000];
-    int i = 0, n = 0, a;
-    scanf("%d", &a);
-    for (; a > 0; a--)
-    {
-        scanf("%s", str);
-        while (i < 1000 && str[i] != '\0')
-        {
-            i++;
-        }
-        while (str[i]=!" ")
-        {
-            nome=str
-        }
+    int i=0,n;
+    char str[100],x=' ',nome[100],snome[100];
+    scanf("%[^\n]s",str);
+    while(i<100 && str[i]!='\0'){
+        i++;
     }
-    printf("%s.%s@unb.br", str,nome);
-    return 0;
+    if (str[i]==x){
+        for (n=0;n<i;n++)
+        nome[n]=tolower(str[n]);
+    }
+     
+    
+    
+    printf("%s.%s@unb.br", nome,snome);
+ return 0;   
 }
