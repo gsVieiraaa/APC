@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "atividade3l3": "c",
-        "atividade": "c"
+        "atividade": "c",
+        "stdio.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
